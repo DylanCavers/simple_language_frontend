@@ -166,7 +166,7 @@ static std::unique_ptr<ExprAST> ParseExpression();
 
 static std::unique_ptr<ExprAST> ParseNumberExpr() {
     auto Result = std::make_unique<NumberExprAST>(NumVal);
-    Result.get()->print();
+    //Result.get()->print();
     getNextToken();
     return std::move(Result);
 }
